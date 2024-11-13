@@ -7,7 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    cursor: url('/images/cursors.png'), auto;
+    cursor: url('../images/cursors.png'), auto;
     background-image: url('../images/bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
