@@ -70,7 +70,7 @@ body {
 }
 
 .locked:hover {
-    cursor: url('/images/cursors.png') 10 10, auto;
+    cursor: url('../images/cursors.png') 10 10, auto;
     height: 5;
     background: #d800e0;
     animation: wiggle 2s linear infinite;
