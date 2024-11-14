@@ -35,4 +35,18 @@ function countdown() {
     }, 1000);
 }
 
+document.addEventListener('touchstart', function (event) {
+    for (let i = 0; i < event.touches.length; i++) {
+        const touch = event.touches[i];
+        const cursorElement = document.createElement('div');
+        cursorElement.classList.add('custom-cursor');
+        cursorElement.style.left = `${touch.pageX - 25}px`;
+        cursorElement.style.top = `${touch.pageY - 25}px`;
+        document.body.appendChild(cursorElement);
+        setTimeout(() => {
+            cursorElement.remove();
+        }, 500);
+    }
+});
+
 countdown();
