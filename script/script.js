@@ -49,4 +49,22 @@ document.addEventListener('touchstart', function (event) {
     }
 });
 
+const noBtn = document.getElementById('noBtn');
+
+function moveButton() {
+    const maxX = window.innerWidth - noBtn.clientWidth;
+    const maxY = window.innerHeight - noBtn.clientHeight;
+    const x = Math.random() * maxX;
+    const y = Math.random() * maxY;
+    noBtn.style.left = `${x}px`;
+    noBtn.style.top = `${y}px`;
+}
+
+noBtn.addEventListener('mouseover', moveButton);
+noBtn.addEventListener('click', moveButton);
+noBtn.addEventListener('touchstart', moveButton);
+
+
+
+
 countdown();
