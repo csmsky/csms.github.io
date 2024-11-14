@@ -108,3 +108,13 @@ body {
         transform: rotateZ(0);
     }
 }
+
+.custom-cursor {
+    position: absolute;
+    height: 5%;
+    width: 5%;
+    background-image: url('../images/cursors.png');
+    background-size: cover;
+    pointer-events: none;
+    z-index: 1000;
+}
