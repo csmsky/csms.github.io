@@ -3,7 +3,7 @@ Dec 1, 2024 23:59:59
 */
 
 function countdown() {
-    const launchDate = new Date("Dec 1, 2024 24:00:00").getTime();
+    const launchDate = new Date("Dec 1, 2024 00:00:00").getTime();
     const button = document.getElementById("lockBtn");
 
 
